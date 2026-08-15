@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sk Md Ziad Rahman | Project Manager . QA Engineer</title>
+<meta name="description" content="Project Manager. QA Engineer Portfolio — Projects, Skills, and Experience.">
+
+<!-- ====================================================================
+     HOW TO CUSTOMIZE THIS FILE
+     1. Search for "EDIT:" comments — each marks a spot to replace with
+        your own content (name, bio, projects, skills, experience, links).
+     2. Colors and fonts live in the :root CSS variables near the top of
+        the <style> block if you want to retheme.
+     3. The contact form currently just shows a confirmation message —
+        wire it to a real backend or a service like Formspree when ready.
+     ==================================================================== -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg: #14181F;
+    --surface: #1C222B;
+    --surface-2: #232B36;
+    --line: #2C3542;
+    --ink: #E8E6DF;
+    --ink-dim: #9BA3AF;
+    --accent: #E8A33D;
+    --accent-dim: #a97a34;
+    --sage: #7C9885;
+
+    --display: 'Fraunces', serif;
+    --body: 'Inter', -apple-system, sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+
+    --max: 880px;
+  }
+
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--body);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important; }
+  }
+
+  a{ color:inherit; text-decoration:none; }
+  ::selection{ background:var(--accent); color:#14181F; }
+  :focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+
+  .wrap{ max-width:var(--max); margin:0 auto; padding:0 24px; }
+
+  /* ---------- nav ---------- */
+  nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(20,24,31,0.85);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  nav .wrap{ display:flex; align-items:center; justify-content:space-between; height:64px; }
+  .logo{ font-family:var(--mono); font-size:14px; color:var(--accent); }
+  .navlinks{ display:flex; gap:28px; font-family:var(--mono); font-size:13px; color:var(--ink-dim); }
+  .navlinks a:hover{ color:var(--ink); }
+  .navlinks .num{ color:var(--accent); }
+  .navtoggle{ display:none; background:none; border:none; color:var(--ink); font-size:22px; cursor:pointer; }
+
+  @media (max-width:720px){
+    .navlinks{
+      position:absolute; top:64px; left:0; right:0;
+      background:var(--surface); flex-direction:column; gap:0;
+      border-bottom:1px solid var(--line);
+      max-height:0; overflow:hidden; transition:max-height .25s ease;
+    }
+    .navlinks.open{ max-height:320px; }
+    .navlinks a{ padding:14px 24px; border-top:1px solid var(--line); }
+    .navtoggle{ display:block; }
+  }
+
+  /* ---------- section scaffolding ---------- */
+  section{ padding:96px 0; border-bottom:1px solid var(--line); }
+  .label{
+    font-family:var(--mono); font-size:13px; color:var(--accent);
+    display:flex; align-items:center; gap:10px; margin-bottom:20px;
+  }
+
+  h2{ font-family:var(--display); font-weight:500; font-size:clamp(28px,4vw,38px); margin-bottom:36px; }
+
+  /* ---------- hero ---------- */
+  .hero{ padding:120px 0 96px; border-bottom:1px solid var(--line); }
+  .hero-kicker{
+    font-family:var(--mono); font-size:13px; color:var(--sage);
+    display:inline-flex; align-items:center; gap:8px; margin-bottom:24px;
+  }
+  .dot{ width:7px; height:7px; border-radius:50%; background:var(--sage); box-shadow:0 0 0 3px rgba(124,152,133,0.25); }
+  .hero h1{
+    font-family:var(--display); font-weight:600; font-size:clamp(38px,7vw,64px);
+    line-height:1.05; margin-bottom:24px; max-width:12ch;
+  }
+  .hero h1 .accent{ color:var(--accent); font-style:italic; }
+  .terminal{
+    font-family:var(--mono); font-size:15px; background:var(--surface);
+    border:1px solid var(--line); border-radius:6px; padding:20px 22px;
+    max-width:560px; margin:28px 0 36px; color:var(--ink-dim);
+  }
+  .terminal .prompt{ color:var(--accent); }
+  .terminal .out{ color:var(--ink); }
+  .caret{ display:inline-block; width:8px; height:16px; background:var(--accent); vertical-align:middle; animation:blink 1s step-end infinite; }
+  @keyframes blink{ 50%{ opacity:0; } }
+
+  .hero-ctas{ display:flex; gap:14px; flex-wrap:wrap; }
+  .btn{
+    font-family:var(--mono); font-size:14px; padding:12px 22px; border-radius:4px;
+    border:1px solid var(--accent); color:var(--accent); transition:.15s ease;
+    display:inline-block;
+  }
+  .btn:hover{ background:var(--accent); color:#14181F; }
+  .btn.ghost{ border-color:var(--line); color:var(--ink-dim); }
+  .btn.ghost:hover{ border-color:var(--ink-dim); color:var(--ink); background:none; }
+
+  /* ---------- about ---------- */
+  .about-grid{ display:grid; grid-template-columns:1.3fr 1fr; gap:56px; }
+  .about-grid p{ color:var(--ink-dim); margin-bottom:16px; max-width:60ch; }
+  .about-grid strong{ color:var(--ink); font-weight:500; }
+  .stats{ display:flex; flex-direction:column; gap:22px; }
+  .stat{ border-left:2px solid var(--accent); padding-left:16px; }
+  .stat b{ font-family:var(--display); font-size:30px; display:block; }
+  .stat span{ font-family:var(--mono); font-size:12px; color:var(--ink-dim); }
+  @media (max-width:720px){ .about-grid{ grid-template-columns:1fr; } }
+
+  
+  /* ---------- skills ---------- */
+  .skills-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+  @media (max-width:720px){ .skills-grid{ grid-template-columns:repeat(2,1fr); } }
+  .skill{ background:var(--surface); border:1px solid var(--line); border-radius:6px; padding:16px 18px; }
+  .skill .name{ font-weight:500; margin-bottom:4px; }
+  .skill .level{ font-family:var(--mono); font-size:11px; color:var(--accent); }
+
+  /* ---------- experience (git-log style) ---------- */
+  .log{ position:relative; padding-left:28px; }
+  .log::before{ content:''; position:absolute; left:6px; top:6px; bottom:6px; width:1px; background:var(--line); }
+  .commit{ position:relative; margin-bottom:36px; }
+  .commit::before{
+    content:''; position:absolute; left:-28px; top:6px; width:11px; height:11px;
+    border-radius:50%; background:var(--bg); border:2px solid var(--accent);
+  }
+  .commit .hash{ font-family:var(--mono); font-size:12px; color:var(--accent); }
+  .commit .meta{ font-family:var(--mono); font-size:12px; color:var(--ink-dim); margin-bottom:6px; }
+  .commit h3{ font-family:var(--display); font-size:19px; font-weight:500; margin-bottom:4px; }
+  .commit .role{ color:var(--ink-dim); font-size:14px; margin-bottom:10px; }
+  .commit ul{ list-style:none; color:var(--ink-dim); font-size:14px; }
+  .commit li{ padding-left:16px; position:relative; margin-bottom:4px; }
+  .commit li::before{ content:'+'; position:absolute; left:0; color:var(--sage); }
+
+  /* ---------- contact ---------- */
+  .contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:56px; }
+  @media (max-width:720px){ .contact-grid{ grid-template-columns:1fr; } }
+  .contact-info p{ color:var(--ink-dim); margin-bottom:24px; max-width:40ch; }
+  .contact-links{ display:flex; flex-direction:column; gap:10px; font-family:var(--mono); font-size:14px; }
+  .contact-links a{ color:var(--ink-dim); }
+  .contact-links a:hover{ color:var(--accent); }
+
+  form{ display:flex; flex-direction:column; gap:14px; }
+  label{ font-family:var(--mono); font-size:12px; color:var(--ink-dim); margin-bottom:6px; display:block; }
+  input, textarea{
+    width:100%; background:var(--surface); border:1px solid var(--line); border-radius:5px;
+    color:var(--ink); padding:12px 14px; font-family:var(--body); font-size:14px;
+  }
+  input:focus, textarea:focus{ border-color:var(--accent); outline:none; }
+  textarea{ resize:vertical; min-height:110px; }
+  button[type="submit"]{
+    font-family:var(--mono); font-size:14px; background:var(--accent); color:#14181F;
+    border:none; padding:13px 22px; border-radius:4px; cursor:pointer; width:fit-content;
+  }
+  button[type="submit"]:hover{ background:#f0b25a; }
+  .form-note{ font-family:var(--mono); font-size:12px; color:var(--sage); min-height:16px; }
+
+  footer{ padding:32px 0; text-align:center; }
+  footer p{ font-family:var(--mono); font-size:12px; color:var(--ink-dim); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="Home"> Sk Md Ziad Rahman</a>
+    <button class="navtoggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <div class="navlinks" id="navLinks">
+      <a href="About"><span class="num"></span> About</a>
+      <a href="Skills"><span class="num"></span> Skills</a>
+      <a href="Experience"><span class="num"></span> Experience</a>
+      <a href="Contact"><span class="num"></span> Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="Home">
+  <div class="wrap">
+    <div class="hero-kicker"></div>
+    <!-- EDIT: your name / tagline -->
+    <h1>Sk Md Ziad Rahman Manages Projects and Software Quality Assurance.</h1>
+
+    <div class="hero-ctas">
+      <a class="btn" href="Contact">Let's talk</a>
+      
+    </div>
+  </div>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section id="About">
+  <div class="wrap">
+    <div class="label">About</div>
+    <div class="about-grid">
+      <div>
+        <!-- EDIT: bio copy -->
+        <p><strong>Project Manager & QA Engineer </strong> who manages projects and ensures software quality. Currently at <strong>MiraiLit Limited</strong>, working on delivering projects and ensuring software quality.</p>
+      
+      </div>
+      <div class="Stats">
+        <div class="stat"><b>5+</b><span>YEARS EXPERIENCE</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+<section id="Skills">
+  <div class="wrap">
+    <div class="label">Skills</div>
+    <h2>Tools & Expertise</h2>
+    <!-- EDIT: your own skills -->
+    <div class="skills-grid">
+      <div class="skill"><div class="name">E-Commerce Projects Management</div><div class="level">EXPERT · 5+ YRS</div></div>
+      <div class="skill"><div class="name">Software Quality Assurance</div><div class="level">EXPERT · 5+ YRS</div></div>
+      <div class="skill"><div class="name">Project Management</div><div class="level">EXPERT · 5+ YRS</div></div>
+      <div class="skill"><div class="name">Team Management</div><div class="level">EXPERT · 5+ YRS</div></div>
+      <div class="skill"><div class="name">Agile Methodologies</div><div class="level">EXPERT · 5+ YRS</div></div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="Experience">
+  <div class="wrap">
+    <div class="label">Experience</div>
+    <h2>Work History</h2>
+
+    <!-- EDIT: your own roles, ordered most recent first -->
+    <div class="log">
+      <div class="commit">
+        
+        <div class="meta">2022 — Present · MiraiLit Limited</div>
+        <h3>Project Manager & QA Engineer</h3>
+        <div class="role">Full-time On-site</div>
+        <ul>
+          <li>Managed projects from inception to delivery, ensuring timely delivery and quality.</li>
+          <li>Ensured software quality by conducting thorough testing and validation.</li>
+        </ul>
+      </div>
+      <div class="commit">
+       
+        <div class="meta">2021 — 2022 · MiraiLit Limited</div>
+        <h3>Operations Executive</h3>
+        <div class="role">Full-time On-site</div>
+        <ul>
+          <li>Managed operations and ensured smooth execution of projects.</li>
+          <li>Handled client communication and project requirements.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="Contact">
+  <div class="wrap">
+    <div class="label">Contact</div>
+    <h2>My Inbox is open.</h2>
+    <div class="contact-grid">
+     
+      <form id="contactForm">
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Send message</button>
+        <div class="form-note" id="formNote"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; <span id="Year"></span> Sk Md Ziad Rahman</p>
+  </div>
+</footer>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  // contact form (placeholder — wire to a real backend or Formspree/EmailJS)
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    document.getElementById('formNote').textContent = 'Thanks! I will get back to you soon.';
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
