@@ -2,7 +2,7 @@
 
 Personal portfolio site for **Sk Md Ziad Rahman**, an e-commerce project management & QA professional. Built as a single-page, static HTML site — no build step, no frameworks, just clean HTML/CSS/JS.
 
-🔗 **Live site:** [www.skziad.com](https://www.skziad.com)
+🔗 **Live site:** [skziad.com](https://skziad.com)
 
 ## About
 
@@ -15,6 +15,8 @@ A single-page site with the following sections:
 - **Education** — academic background and certifications
 - **Contact** — a working contact form that submits directly to email via [Web3Forms](https://web3forms.com/) (no backend required)
 
+
+
 ## Tech Stack
 
 - **HTML5 / CSS3 / vanilla JS** — single-file `index.html`, styles inline in a `<style>` block using CSS custom properties for theming
@@ -22,7 +24,10 @@ A single-page site with the following sections:
 - **Contact form:** [Web3Forms](https://web3forms.com/) — submits via `fetch()`, no server-side code needed
 - **Custom error pages:** `400.shtml`, `401.shtml`, `403.shtml`, `404.shtml`, `500.shtml`
 - **Favicons & touch icons:** generated for all standard sizes (16×16 up to 512×512)
-- **Hosting:** GitHub Pages with a custom domain (see `CNAME`)
+- **Domain:** registered via [Namecheap](https://www.namecheap.com/)
+- **Hosting:** shared hosting via [Hosting Bangladesh](https://www.hostingbangladesh.com/), deployed automatically from GitHub using GitHub Actions + FTP
+
+
 
 ## Project Structure
 
@@ -34,7 +39,6 @@ A single-page site with the following sections:
 ├── 403.shtml                    # Forbidden error page
 ├── 404.shtml                    # Not Found error page
 ├── 500.shtml                    # Internal Server Error page
-├── CNAME                        # Custom domain config for GitHub Pages
 ├── Resume.pdf                   # Downloadable resume
 ├── Sk_Md_Ziad_Rahman.jpeg       # Profile photo
 ├── favicon.ico
@@ -44,13 +48,27 @@ A single-page site with the following sections:
 ├── apple-touch-icon.png
 ├── android-chrome-192x192.png
 ├── android-chrome-512x512.png
+├── .github
+│   └── workflows
+│       └── deploy.yml           # GitHub Actions workflow (auto-deploy on push)
 └── .gitignore
 ```
 
+
+
 ## Deployment
 
-The site is deployed via **GitHub Pages**, served from the `main` branch, and mapped to the custom domain `skziad.com` through the `CNAME` file. Any push to `main` updates the live site automatically.
+The site is version-controlled on **GitHub** and deployed automatically to **Hosting Bangladesh** via **GitHub Actions**.
+
+**How it works:**
+
+1. Code changes are pushed to the `main` branch on GitHub.
+2. A GitHub Actions workflow (`.github/workflows/deploy.yml`) triggers automatically on every push.
+3. The workflow connects to the Hosting Bangladesh server over **FTP** and syncs the updated files to the live web root (`public_html`).
+4. The domain `skziad.com` (registered on Namecheap) points to the Hosting Bangladesh server, so changes go live within moments of a successful deploy.
+
+**Deployment credentials** (FTP host, username, password, and remote path) are stored securely as **GitHub Actions Secrets** and are never committed to the repository.
 
 ## License
 
-© Sk Md Ziad Rahman. All rights reserved. This code is shared for portfolio/reference purposes; please don't reuse the personal content (name, resume, photos) as your own.
+© Sk Md Ziad Rahman. All rights reserved. This code is shared for portfolio purposes; please don't reuse the personal content (name, resume, photos) as your own.
