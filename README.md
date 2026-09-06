@@ -15,6 +15,8 @@ A single-page site with the following sections:
 - **Education** — academic background and certifications
 - **Contact** — a working contact form that submits directly to email via [Web3Forms](https://web3forms.com/) (no backend required)
 
+
+
 ## Tech Stack
 
 - **HTML5 / CSS3 / vanilla JS** — single-file `index.html`, styles inline in a `<style>` block using CSS custom properties for theming
@@ -24,6 +26,8 @@ A single-page site with the following sections:
 - **Favicons & touch icons:** generated for all standard sizes (16×16 up to 512×512)
 - **Domain:** registered via [Namecheap](https://www.namecheap.com/)
 - **Hosting:** shared hosting via [Hosting Bangladesh](https://www.hostingbangladesh.com/), deployed automatically from GitHub using GitHub Actions + FTP
+
+
 
 ## Project Structure
 
@@ -39,15 +43,14 @@ A single-page site with the following sections:
 │   ├── images/
 │   │   └── Sk_Md_Ziad_Rahman.jpeg    # Profile photo
 │   ├── favicons/
-│   │   ├── favicon.ico
-│   │   ├── favicon-16x16.png
-│   │   ├── favicon-32x32.png
-│   │   ├── favicon-48x48.png
-│   │   ├── apple-touch-icon.png
-│   │   ├── android-chrome-192x192.png
-│   │   └── android-chrome-512x512.png
-│   └── docs/
-│       └── Resume.pdf                # Downloadable resume
+│      ├── favicon.ico
+│      ├── favicon-16x16.png
+│      ├── favicon-32x32.png
+│      ├── favicon-48x48.png
+│      ├── apple-touch-icon.png
+│      ├── android-chrome-192x192.png
+│      └── android-chrome-512x512.png
+│   
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml                # GitHub Actions workflow (auto-deploy on push)
@@ -55,6 +58,8 @@ A single-page site with the following sections:
 ```
 
 > Note: the custom error pages (`400.shtml`–`500.shtml`) are kept at the site root, since that's where cPanel's error-page handling expects to find them.
+
+
 
 ## Deployment
 
@@ -68,14 +73,6 @@ The site is version-controlled on **GitHub** and deployed automatically to **Hos
 4. The domain `skziad.com` (registered on Namecheap) points to the Hosting Bangladesh server, so changes go live within moments of a successful deploy.
 
 **Deployment credentials** (FTP host, username, password, and remote path) are stored securely as **GitHub Actions Secrets** and are never committed to the repository.
-
-**To deploy an update:**
-```bash
-git add .
-git commit -m "update site"
-git push origin main
-```
-Then check the **Actions** tab on GitHub to confirm the deployment succeeded.
 
 ## License
 
