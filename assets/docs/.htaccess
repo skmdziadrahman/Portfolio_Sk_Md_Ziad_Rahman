@@ -1,0 +1,8 @@
+# Keep files in this folder out of search engines and AI indexes.
+# They still open for anyone who has the direct link.
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow, noarchive"
+</IfModule>
+
+# Don't show a file listing if someone visits /assets/docs/
+Options -Indexes

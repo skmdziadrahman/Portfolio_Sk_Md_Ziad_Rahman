@@ -1,0 +1,68 @@
+# Sk Md Ziad Rahman
+
+> E-commerce Project Manager & QA Engineer at MiraiLit Limited (Dhaka, Bangladesh) with 5 years of experience leading end-to-end online retail operations for an international e-commerce grocery platform, plus software quality assurance: manual, API, mobile, performance and regression testing and UAT coordination.
+
+## Summary
+
+- Current role: E-commerce Project Manager & QA Engineer, MiraiLit Limited, Dhaka (December 2022 to present)
+- Previous role: E-commerce Operations Executive & QA Engineer, MiraiLit Limited, Dhaka (September 2021 to December 2022)
+- Location: Dhaka, Bangladesh
+- Operations focus: order management, fulfillment, logistics, inventory, customer service, returns, SOP development (written and video), KPI monitoring, team leadership, vendor and supplier management, COD and payment reconciliation
+- QA focus: test case design and execution, regression testing, bug tracking in Jira, API testing and automation (Postman, Newman), mobile app testing (Android, iOS), performance testing (Apache JMeter), database testing (MySQL), UAT coordination
+- Marketing: email and retention campaigns in Klaviyo and Brevo, push notifications, content calendar and campaign planning
+- Tools: WooCommerce, Shopify, WordPress, Klaviyo, Brevo, Stripe, Jira, Trello, Postman, Newman, Apache JMeter, MySQL, Google Sheets, Google Docs
+- Ways of working: Agile (sprint planning, daily stand-ups)
+
+## Experience
+
+### E-commerce Project Manager & QA Engineer — MiraiLit Limited (Dec 2022 – present)
+- Leads end-to-end e-commerce operations: order management, fulfillment, logistics, inventory, customer service and website operations
+- Leads and mentors the operations team; sets KPIs and monitors performance
+- Develops written and video SOPs for training and consistent execution
+- Supports email marketing and retention campaigns in Klaviyo and Brevo
+- Identifies operational bottlenecks and drives process improvement
+- Manages logistics providers and suppliers
+- Oversees operations for product launches, promotions and sales events
+- Evaluates and implements automation tools and integrations
+- Leads QA for the Shinjuku Halal Food app and website: test case design, execution, regression testing, UAT coordination
+- Performs API testing (Postman) and mobile app testing (Android, iOS) before releases
+- Tracks bugs and QA workflows in Jira through to resolution
+
+### E-commerce Operations Executive & QA Engineer — MiraiLit Limited (Sep 2021 – Dec 2022)
+- Managed daily order processing, fulfillment, shipping and returns
+- Monitored stock and coordinated procurement and restocking with suppliers
+- Maintained product listings, pricing and availability
+- Analyzed orders, returns and delivery times to improve processes
+- Supported vendor and seller onboarding
+- Reconciled invoices, COD payments and inventory reports with finance
+- Wrote and executed manual test cases for app and website releases; logged bugs in Jira
+- Performed regression testing and supported UAT before releases
+
+## Projects
+
+- [Hotel Booking API Automation](https://github.com/skmdziadrahman/API-Automation-Testing-for-Hotel-Booking-Project) (Postman, JavaScript, Newman): CRUD, authentication, request chaining, assertions, HTML reports
+- [Data-Driven Testing for Hotel Booking](https://github.com/skmdziadrahman/Data-Driven-Testing-for-Hotel-Booking-Project) (Postman, Newman): CSV-driven test suite
+- [Student Details API Automation](https://github.com/skmdziadrahman/Student-Details-API-Automation-Testing-project) (Postman): dynamic data, chaining, assertions
+- [Hotel Booking API Performance Testing](https://github.com/skmdziadrahman/Hotel-booking-api-performance-testing) (Apache JMeter): smoke, load, stress, spike, endurance, scalability, capacity, volume
+- [Portfolio Website Performance Testing](https://github.com/skmdziadrahman/Portfolio-website-performance-testing) (Apache JMeter): load, stress, spike, endurance on a live site
+- [Employee & Payroll Database Testing](https://github.com/skmdziadrahman/Database-Testing-for-Employee-Payroll-System) (MySQL): schema, constraints, CRUD/JOIN, stored procedures, triggers
+- [Shinjuku Halal Food Website Manual Testing](https://github.com/skmdziadrahman/Shinjuku_Halal_Food_Website_Manual_Testing) (WooCommerce): test plan, test cases, QA mind map
+
+## Education
+
+- B.Sc. in Electrical & Electronic Engineering, University of Asia Pacific (2021)
+- HSC, Ispahani Public School & College, Cumilla (2016), GPA 5.00/5.00
+- SSC, Ispahani Public School & College, Cumilla (2014), GPA 5.00/5.00
+
+## Certifications
+
+- Software Quality Assurance
+- Microsoft Office
+- Essentials of Labor Law
+
+## Links
+
+- [Portfolio](https://www.skziad.com/): main site with skills, experience, education and a contact form
+- [LinkedIn](https://www.linkedin.com/in/skmdziadrahman0/)
+- [GitHub](https://github.com/skmdziadrahman)
+- [Schedule a meeting](https://calendly.com/skmdziadrahman00/30min)
